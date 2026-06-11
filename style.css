@@ -709,6 +709,9 @@ ul {
     font-size: 1.25rem;
 }
 .text-muted { color: var(--text-muted); }
+.text-sm { font-size: 0.9rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
 
 /* =========================================
    Contact Section
@@ -752,6 +755,7 @@ ul {
     justify-content: center;
     font-size: 1.5rem;
     transition: var(--transition);
+    flex-shrink: 0;
 }
 .contact-link .label {
     font-family: var(--font-mono);
@@ -760,6 +764,7 @@ ul {
 }
 .contact-link .value {
     font-weight: 500;
+    word-break: break-all;
 }
 
 .contact-form {
@@ -858,7 +863,7 @@ footer {
         margin-right: auto;
     }
     .nav-links {
-        display: none; /* simple hidden for mobile, could add a menu */
+        display: none;
     }
     .mobile-toggle {
         display: block;
@@ -874,5 +879,14 @@ footer {
     }
     .arch-flow {
         flex-direction: column;
+    }
+    .about-highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-highlights {
+        grid-template-columns: 1fr;
     }
 }

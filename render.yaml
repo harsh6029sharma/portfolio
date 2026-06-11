@@ -1,6 +1,12 @@
+# services:
+#   - type: web
+#     name: harsh-portfolio
+#     env: static
+#     buildCommand: "" # No build step needed for vanilla HTML/CSS/JS
+#     staticPublishPath: . # Publish the root directory directly
 services:
   - type: web
     name: harsh-portfolio
     env: static
-    buildCommand: "" # No build step needed for vanilla HTML/CSS/JS
-    staticPublishPath: . # Publish the root directory directly
+    buildCommand: ""
+    staticPublishPath: .
